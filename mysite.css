@@ -1,0 +1,120 @@
+html,body
+{
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+/*-----------------global classes---------*/
+a
+{
+	text-decoration: none;
+}
+.flex_row
+{
+	display: flex;
+	flex-direction: row;
+}
+ul
+{
+	list-style-type: none;
+} 
+h1
+{
+	font-size: 2.5rem;
+
+}
+h3
+{
+	font-size: 1.3rem;
+}
+button.btn
+{
+	border: none;
+	border-radius: 2rem;
+	padding: 1rem 3rem;
+	font-size: 1rem;
+	cursor: pointer;
+}
+/*-----------------global classes---------*/
+
+/*-----------------navigation----------*/
+.navigation
+{
+	background: white;
+	padding: 0 2rem;
+	height: 0rem;
+	min-height: 10vh;
+	overflow: hidden;
+}
+.navigation .site_brand a
+{
+	font-size: 1.6rem;
+	padding: 1rem 0;
+	display: block;  
+}
+.navigation .menu_bar
+{
+ justify-content: space-between;
+}
+.navigation .menu_items
+{
+	
+	display: flex;
+	margin: 0;
+}
+.navigation .menu_items .menu_link
+{
+	padding: 1.6rem 1rem;
+	font-size: 1.1rem;
+	position: relative;
+}
+.navigation .menu_items .menu_link:hover
+{
+	background-color: lightseagreen;
+	color: white;
+}
+.navigation .menu_items .menu_link:hover a
+{
+	color: white;
+}
+
+/*--------x---------navigation----x------*/
+/*------------main content---------------*/
+main .site_title
+{
+	background: url('assets/images/flower1.jpg');
+	background-size: cover;
+	height: 110vh;
+	display: flex;
+	justify-content: center;
+}
+main .site_title .site_background
+{
+	padding-top: 10rem;
+	text-align: center;
+	color: white;
+}
+main .site_title h1,h3
+{
+	margin: 3rem;
+}
+main .site_title .btn
+{
+	margin:1.5rem;
+	background: teal;
+}
+main .site_title .btn:hover
+{
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+}
+/*------x------main content------x---------*/
+/*------------viewport less than or equal to 750px-----*/
+@media only screen and(max-width: 750px)
+{
+.navigation .menu_bar{
+	flex-direction: column;
+}
+}
+/*-------x-----viewport less than or equal to 750px-----x---*/
